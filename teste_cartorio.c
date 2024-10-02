@@ -123,7 +123,8 @@ int opcao=0;
 	
 printf("\t1 - Registrar nomes\n");
 printf("\t2 - consultar nomes\n");
-printf("\t3 - deletar nomes\n\n");
+printf("\t3 - deletar nomes\n");
+printf("\t4 - sair do sistema\n");
 printf("Opção:");
 scanf("%d", &opcao);
 system("cls");
@@ -140,6 +141,11 @@ switch(opcao)
 	
 	case 3:
     	deletar();
+	break;
+	
+	case 4:
+		printf("Obrigado por utilizar o sistema!");
+		return 0;
 	break;
 	
 	default:
